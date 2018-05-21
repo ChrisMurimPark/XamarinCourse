@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XamCourse.Views.QuotesPage">
+    <ContentPage.Padding >
+        <OnPlatform x:TypeArguments="Thickness" Android="20"/>
+    </ContentPage.Padding>
+    <StackLayout BindingContext="{x:Reference slider}">
+        <Label x:Name="font_size_label" Text="{Binding Value, StringFormat='Font Size is {0:####}'}"/>
+        <Button HorizontalOptions="Center" Text="Next" Clicked="Handle_Next_Clicked"/>
+        <Slider x:Name="slider" Maximum="48" Minimum="16"/>
+        <Label x:Name="quote_label" FontSize="{Binding Value}"/>
+    </StackLayout>
+</ContentPage>
