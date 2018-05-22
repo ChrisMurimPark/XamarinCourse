@@ -42,4 +42,4 @@ Thumbs.db
 # backlog
 Backlog.txt
 
-*.vs/*
+XamCourse/.vs/*
