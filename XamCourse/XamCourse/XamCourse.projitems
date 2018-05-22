@@ -14,6 +14,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\StackLayoutPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -45,6 +49,9 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\QuotesPage.xaml.cs">
       <DependentUpon>QuotesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\StackLayoutPage.xaml.cs">
+      <DependentUpon>StackLayoutPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

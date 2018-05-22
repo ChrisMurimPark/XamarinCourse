@@ -1,23 +1,32 @@
-﻿<Properties StartupConfiguration="{AB4DFCA4-28EC-4C75-AAC5-63407937131D}|Default">
+﻿<Properties StartupConfiguration="{80490CD4-C76E-4CB7-A8DD-1821B71D2569}|Default">
   <MonoDevelop.Ide.ItemProperties.XamCourse.Android PreferredExecutionTarget="Android.Android_Accelerated_x86" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamCourse/Views/QuotesPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamCourse/App.xaml.cs">
     <Files>
-      <File FileName="XamCourse/Views/MainPage.xaml" Line="23" Column="25" />
-      <File FileName="XamCourse/Views/QuotesPage.xaml" Line="9" Column="45" />
-      <File FileName="XamCourse/Views/QuotesPage.xaml.cs" Line="21" Column="1" />
+      <File FileName="XamCourse/Views/MainPage.xaml" Line="25" Column="13" />
+      <File FileName="XamCourse/Views/QuotesPage.xaml" Line="15" Column="15" />
+      <File FileName="XamCourse/Views/QuotesPage.xaml.cs" Line="44" Column="1" />
       <File FileName="XamCourse/App.xaml.cs" Line="27" Column="9" />
       <File FileName="XamCourse.iOS/obj/iPhoneSimulator/Debug/QuotesPage.xaml.g.cs" Line="20" Column="98" />
+      <File FileName="XamCourse/Views/StackLayoutPage.xaml" Line="31" Column="1" />
+      <File FileName="XamCourse/Views/StackLayoutPage.xaml.cs" Line="15" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="XamCourse" expanded="True">
             <Node name="XamCourse" expanded="True">
-              <Node name="Services" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="QuotesPage.xaml" expanded="True" selected="True" />
+                <Node name="QuotesPage.xaml" expanded="True" />
+                <Node name="StackLayoutPage.xaml" expanded="True" />
               </Node>
-              <Node name="App.xaml" expanded="True" />
+              <Node name="App.xaml" expanded="True">
+                <Node name="App.xaml.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="XamCourse.Android" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="values" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
