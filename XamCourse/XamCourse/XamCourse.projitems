@@ -18,6 +18,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\GridPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\AbsoluteLayoutPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -52,6 +60,12 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\StackLayoutPage.xaml.cs">
       <DependentUpon>StackLayoutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\GridPage.xaml.cs">
+      <DependentUpon>GridPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\AbsoluteLayoutPage.xaml.cs">
+      <DependentUpon>AbsoluteLayoutPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
