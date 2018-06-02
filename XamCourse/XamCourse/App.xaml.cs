@@ -22,7 +22,7 @@ namespace XamCourse
             //else
                 //DependencyService.Register<AzureDataStore>();
 
-            MainPage = new AbsoluteLayoutPage2();
+            MainPage = new RelativeLayoutPage();
         }
 
         protected override void OnStart()

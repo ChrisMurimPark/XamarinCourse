@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="XamCourse.Views.RelativeLayoutPage"
+    BackgroundColor="White">
+    <RelativeLayout>
+        <BoxView BackgroundColor="#F7F7F7"
+                 x:Name="banner"
+                 RelativeLayout.WidthConstraint=
+                    "{ ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1 }"
+                 RelativeLayout.HeightConstraint=
+                    "{ ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.3 }"/>
+        <StackLayout RelativeLayout.WidthConstraint=
+                        "{ ConstraintExpression Type=RelativeToView, ElementName=banner, Property=Width, Factor=1 }"
+                     RelativeLayout.HeightConstraint=
+                        "{ ConstraintExpression Type=RelativeToView, ElementName=banner, Property=Height, Factor=1 }"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center">
+            <Label Text="$11.95" 
+                   TextColor="#33353a" 
+                   FontSize="60" 
+                   FontAttributes="Bold"/>
+            <Button BackgroundColor="#1695A3"
+                    BorderRadius="15"
+                    FontSize="15"
+                    Text="Add $7.99 Credit"
+                    TextColor="White"
+                    FontAttributes="Bold"/>
+        </StackLayout>
+        <StackLayout RelativeLayout.YConstraint="{ ConstraintExpression Type=RelativeToView, ElementName=banner, Property=Height, Factor=1 }"
+                     RelativeLayout.HeightConstraint="{ ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.7 }"
+                     RelativeLayout.WidthConstraint="{ ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1 }"
+                     HorizontalOptions="Center"
+                     Padding="0, 30">
+            <Label Text="Why pay for credit?"
+                   FontSize="15"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="Because you can reach people who aren't on SkyApp by calling mobile and landline numbers, or spending SMS, at low-cost rates"
+                   FontSize="13"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center"
+                   Margin="30, 20"/>
+        </StackLayout>
+    </RelativeLayout>
+</ContentPage>
