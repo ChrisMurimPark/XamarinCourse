@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="XamCourse.Views.AbsoluteLayoutPage2">
+    <AbsoluteLayout BackgroundColor="Gray">
+        <Image AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+               AbsoluteLayout.LayoutFlags="All"
+               Source="https://www.nature.org/cs/groups/webcontent/@web/documents/media/2016-photocontest-yosemite-w-1.jpg"
+               Aspect="AspectFill"/>
+        <Label x:Name="relax_label" 
+               AbsoluteLayout.LayoutBounds="0.5, 20"
+               AbsoluteLayout.LayoutFlags="XProportional"
+               Text="Relax"
+               FontSize="30"
+               TextColor="White"/>
+        <BoxView AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional" 
+                 AbsoluteLayout.LayoutBounds="0, 1, 1, 100"
+                 BackgroundColor="Black"
+                 Opacity="0.5"/>
+        <StackLayout 
+            BackgroundColor="Transparent"
+            AbsoluteLayout.LayoutBounds="0, 1, 1, 100"
+            AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+            Orientation="Horizontal"
+            Padding="30, 0">
+            <Label Text="Profile" 
+                   TextColor="White" 
+                   FontSize="15" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"/>
+            <Label Text="Meditate" 
+                   TextColor="White" 
+                   FontSize="15" 
+                   HorizontalOptions="CenterAndExpand" 
+                   VerticalOptions="Center"/>
+            <Label Text="Themes" 
+                   TextColor="White" 
+                   FontSize="15" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"/>
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>
