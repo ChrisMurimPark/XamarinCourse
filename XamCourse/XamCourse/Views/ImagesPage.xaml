@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="XamCourse.Views.ImagesPage"
+    BackgroundColor="Black">
+    <RelativeLayout>
+        <Image x:Name="image" 
+               Aspect="AspectFit"
+               RelativeLayout.WidthConstraint=
+                   "{ ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1 }"
+               RelativeLayout.HeightConstraint=
+                   "{ ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1 }"/>
+        <StackLayout Orientation="Horizontal"
+                     RelativeLayout.WidthConstraint=
+                         "{ ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1 }"
+                     RelativeLayout.HeightConstraint=
+                         "{ ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.2 }"
+                     Padding="30">
+            <Button Image="left.png"
+                    HorizontalOptions="Start"
+                    Clicked="HandlePrevClicked"
+                    BackgroundColor="Transparent"/>
+            <ActivityIndicator IsRunning="{ Binding Source={x:Reference image}, Path=IsLoading }" 
+                               Color="White" 
+                               HorizontalOptions="CenterAndExpand"/>
+            <Button Image="right.png"
+                    HorizontalOptions="End"
+                    Clicked="HandleNextClicked"
+                    BackgroundColor="Transparent"/>
+        </StackLayout>
+    </RelativeLayout>
+</ContentPage>

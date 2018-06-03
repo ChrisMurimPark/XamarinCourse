@@ -123,6 +123,12 @@
     <BundleResource Include="Resources\xamarin_logo%402x.png" />
     <BundleResource Include="Resources\xamarin_logo%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\left.png" />
+    <BundleResource Include="Resources\left%402x.png" />
+    <BundleResource Include="Resources\left%403x.png" />
+    <BundleResource Include="Resources\right.png" />
+    <BundleResource Include="Resources\right%402x.png" />
+    <BundleResource Include="Resources\right%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -136,6 +142,9 @@
     <PackageReference Include="Xamarin.TestCloud.Agent" Version="0.21.4" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
     <PackageReference Include="Xam.Plugin.Connectivity" Version="3.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\.imageset\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\XamCourse\XamCourse.projitems" Label="Shared" />

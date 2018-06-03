@@ -86,6 +86,14 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\drawable\xamarin_logo.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\left" />
+    <AndroidResource Include="Resources\drawable-hdpi\right" />
+    <AndroidResource Include="Resources\drawable-xhdpi\left" />
+    <AndroidResource Include="Resources\drawable-xhdpi\right" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\left" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\right" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\left" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\right" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable-hdpi\" />
