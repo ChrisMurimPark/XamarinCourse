@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamCourse.Views.ListViewPage">
+    <StackLayout>
+        <SearchBar Placeholder="Search..."
+                   TextChanged="HandleSearchTextChanged"
+                   x:Name="search_bar"/>
+        <ListView x:Name="list_view"
+                  IsGroupingEnabled="true"
+                  IsPullToRefreshEnabled="true"
+                  Refreshing="HandleRefreshing"
+                  ItemSelected="HandleItemSelected">
+            <ListView.GroupHeaderTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding m_title}"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               Margin="20, 10"/>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.GroupHeaderTemplate>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding m_location}" 
+                              Detail="{Binding m_duration}">
+                        <TextCell.ContextActions>
+                            <MenuItem Text="Delete" 
+                                      Clicked="HandleDeleteClicked" 
+                                      IsDestructive="true"
+                                      CommandParameter="{Binding m_id}"/>
+                        </TextCell.ContextActions>
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
