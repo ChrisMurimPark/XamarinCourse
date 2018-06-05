@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using XamCourse.Services;
 using XamCourse.Views;
+using XamCourse.Views.InstagramPages;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
@@ -22,7 +23,7 @@ namespace XamCourse
             //else
                 //DependencyService.Register<AzureDataStore>();
 
-            MainPage = new ListViewPage();
+            MainPage = new HomePage();
         }
 
         protected override void OnStart()

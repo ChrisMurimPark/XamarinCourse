@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="XamCourse.Views.InstagramPages.HomePage"
+    xmlns:local="clr-namespace:XamCourse.Views.InstagramPages">
+    <NavigationPage Icon="heart.png" 
+                    Title="Activity Feed">
+        <x:Arguments>
+            <local:ActivityFeedPage/>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Profile" 
+                    Icon="user.png">
+        <x:Arguments>
+            <local:ProfilePage />
+        </x:Arguments>
+    </NavigationPage>
+</TabbedPage>
